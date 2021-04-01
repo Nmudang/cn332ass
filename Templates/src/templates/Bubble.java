@@ -15,9 +15,9 @@ import java.util.Collections;
  */
 abstract class Bubble {
 
-    protected ArrayList<Object> persons;
+    protected ArrayList<Person> persons;
 
-    public Bubble(ArrayList<Object> persons) {
+    public Bubble(ArrayList<Person> persons) {
         this.persons = persons;
         sortAge();
         sortName();
@@ -29,18 +29,8 @@ abstract class Bubble {
     public abstract void sortName();
     public void printPerson() {
         int i = 1;
-        for (Object person : persons) {
-            Class p = person.getClass();
-            for (Field f : p.getDeclaredFields()) {
-                f.setAccessible(true);
-                try {
-                    System.out.print(f.getName() + ": " + f.get(person) + " ");
-                } catch (Exception e) {
-                    System.out.println("");
-                }
-            }
-            System.out.println("");
-
+        for(Person person: persons){
+            System.out.println((i++) + ". Name: "+person.getName()+" Age: "+person.getAge()+" Gender: "+person.getGender());
         }
     }
 

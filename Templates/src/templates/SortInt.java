@@ -13,7 +13,7 @@ import java.util.ArrayList;
  */
 public class SortInt extends Bubble {
 
-    public SortInt(ArrayList<Object> persons) {
+    public SortInt(ArrayList<Person> persons) {
         super(persons);
     }
 

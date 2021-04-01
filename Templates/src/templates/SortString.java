@@ -5,7 +5,6 @@
  */
 package templates;
 
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -15,7 +14,7 @@ import java.util.Collections;
  */
 public class SortString extends Bubble {
 
-    public SortString(ArrayList<Object> persons) {
+    public SortString(ArrayList<Person> persons) {
         super(persons);
     }
 
@@ -49,44 +48,29 @@ public class SortString extends Bubble {
 
     @Override
     public void sortAge() {
-        for (int i = 0; i < persons.size() - 1; i++) {
-            for (int j = 0; j < persons.size() - 1 - i; j++) {
-                Class p = persons.get(j).getClass();
-                for (Field f : p.getDeclaredFields()) {
-                    f.setAccessible(true);
-                    try {
-                        if (f.getName().contains("age")) {
-                            if (compareTo(f.get(persons.get(j)), f.get(persons.get(j + 1))) == 1) {
-                                Collections.swap(persons, j, j + 1);
-                            }
-                        }
-                    } catch (Exception e) {
-                        System.out.println("");
+        {
+            for (int i = 0; i < persons.size() - 1; i++) {
+                for (int j = 0; j < persons.size() - 1 - i; j++) {
+                    if (compareTo(persons.get(j).getAge(), persons.get(j + 1).getAge()) == 1) {
+                        Collections.swap(persons, j, j + 1);
                     }
                 }
             }
+            System.out.println("sortAge");
         }
     }
 
     @Override
-    public void sortName() {
-        for (int i = 0; i < persons.size() - 1; i++) {
-            for (int j = 0; j < persons.size() - 1 - i; j++) {
-                Class p = persons.get(j).getClass();
-                for (Field f : p.getDeclaredFields()) {
-                    f.setAccessible(true);
-                    try {
-                        if (f.getName().contains("name")) {
-                            if (compareTo(f.get(persons.get(j)), f.get(persons.get(j + 1))) == 1) {
-                                Collections.swap(persons, j, j + 1);
-                            }
-                        }
-                    } catch (Exception e) {
-                        System.out.println("");
-                    }
-                }
+    public void sortName()  {
+        
+        for (int i = 0; i<persons.size()-1; i++){
+            for(int j = 0; j < persons.size() -1-i; j++){
+                if(compareTo(persons.get(j).getName(),persons.get(j+1).getName()) == 1)
+                    if (persons.get(j).getAge() == persons.get(j+1).getAge())
+                        Collections.swap(persons, j, j+1);
             }
         }
-
+        System.out.println("sortName");
     }
+
 }

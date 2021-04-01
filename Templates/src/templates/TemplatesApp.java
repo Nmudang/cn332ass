@@ -25,7 +25,7 @@ public class TemplatesApp {
         Person p4 = new Person("Jeon Wonmeow","25","Female");
         Person p5 = new Person("Kwon Soonyong","25","Male");
         
-        ArrayList<Object> persons =  new ArrayList<Object>();
+        ArrayList<Person> persons =  new ArrayList<Person>();
        
         
         persons.add(p1);
