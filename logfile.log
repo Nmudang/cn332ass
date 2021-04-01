@@ -1,0 +1,33 @@
+2021-03-29 23:18:31,352 Start logfile
+2021-03-29 23:18:31,366 file_cache is only supported with oauth2client<4.0.0
+2021-03-29 23:18:31,746 URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1oeZQIZ1pTyh-fStiQkbYjt7LXNXUbtRQui6nML_ZKGE/values/A1:append?valueInputOption=USER_ENTERED&alt=json
+2021-03-29 23:18:32,633  : add Business 1
+2021-03-29 23:18:32,637 URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1oeZQIZ1pTyh-fStiQkbYjt7LXNXUbtRQui6nML_ZKGE/values/A1:append?valueInputOption=USER_ENTERED&alt=json
+2021-03-29 23:18:43,164  : add Other 1
+2021-03-29 23:18:43,168 URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1oeZQIZ1pTyh-fStiQkbYjt7LXNXUbtRQui6nML_ZKGE/values/A1:append?valueInputOption=USER_ENTERED&alt=json
+2021-03-29 23:18:44,164  : edit: from Business 1 to Businessman 2
+2021-03-29 23:18:44,168 URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1oeZQIZ1pTyh-fStiQkbYjt7LXNXUbtRQui6nML_ZKGE/values/A1:append?valueInputOption=USER_ENTERED&alt=json
+2021-03-29 23:18:45,453  : edit: from Other 1 to Other Boy
+2021-03-29 23:18:45,458 URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1oeZQIZ1pTyh-fStiQkbYjt7LXNXUbtRQui6nML_ZKGE/values/A1:append?valueInputOption=USER_ENTERED&alt=json
+2021-03-29 23:22:33,327 Start logfile
+2021-03-29 23:22:33,340 file_cache is only supported with oauth2client<4.0.0
+2021-03-29 23:22:33,660 URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1oeZQIZ1pTyh-fStiQkbYjt7LXNXUbtRQui6nML_ZKGE/values/A1:append?valueInputOption=USER_ENTERED&alt=json
+2021-03-29 23:22:34,429  : add Business 1
+2021-03-29 23:22:34,433 URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1oeZQIZ1pTyh-fStiQkbYjt7LXNXUbtRQui6nML_ZKGE/values/A1:append?valueInputOption=USER_ENTERED&alt=json
+2021-03-29 23:22:35,064  : add Other 1
+2021-03-29 23:22:35,068 URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1oeZQIZ1pTyh-fStiQkbYjt7LXNXUbtRQui6nML_ZKGE/values/A1:append?valueInputOption=USER_ENTERED&alt=json
+2021-03-29 23:22:35,647  : edit: from Business 1 to Businessman 2
+2021-03-29 23:22:35,651 URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1oeZQIZ1pTyh-fStiQkbYjt7LXNXUbtRQui6nML_ZKGE/values/A1:append?valueInputOption=USER_ENTERED&alt=json
+2021-03-29 23:22:36,233  : edit: from Other 1 to Other Boy
+2021-03-29 23:22:36,237 URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1oeZQIZ1pTyh-fStiQkbYjt7LXNXUbtRQui6nML_ZKGE/values/A1:append?valueInputOption=USER_ENTERED&alt=json
+2021-03-29 23:23:32,054 Start logfile
+2021-03-29 23:23:32,067 file_cache is only supported with oauth2client<4.0.0
+2021-03-29 23:23:32,397 URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1oeZQIZ1pTyh-fStiQkbYjt7LXNXUbtRQui6nML_ZKGE/values/A1:append?valueInputOption=USER_ENTERED&alt=json
+2021-03-29 23:23:33,250  : add Business 1
+2021-03-29 23:23:33,254 URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1oeZQIZ1pTyh-fStiQkbYjt7LXNXUbtRQui6nML_ZKGE/values/A1:append?valueInputOption=USER_ENTERED&alt=json
+2021-03-29 23:23:33,863  : add Other 1
+2021-03-29 23:23:33,866 URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1oeZQIZ1pTyh-fStiQkbYjt7LXNXUbtRQui6nML_ZKGE/values/A1:append?valueInputOption=USER_ENTERED&alt=json
+2021-03-29 23:23:34,581  : edit: from Business 1 to Businessman 2
+2021-03-29 23:23:34,585 URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1oeZQIZ1pTyh-fStiQkbYjt7LXNXUbtRQui6nML_ZKGE/values/A1:append?valueInputOption=USER_ENTERED&alt=json
+2021-03-29 23:23:35,261  : edit: from Other 1 to Other Boy
+2021-03-29 23:23:35,265 URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1oeZQIZ1pTyh-fStiQkbYjt7LXNXUbtRQui6nML_ZKGE/values/A1:append?valueInputOption=USER_ENTERED&alt=json
