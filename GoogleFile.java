@@ -38,6 +38,9 @@ public class GoogleFile {
     private String spreadsheetId;
     private String range;
     private ValueRange requestBody;
+    private Sheets sheetsService;
+    private  static final  String valueInputOption = "USER_ENTERED";
+    private  static final  String insertDataOption = "OVERWRITE";
   
     private static Credential getCredentials(HttpTransport HTTP_TRANSPORT) throws IOException {
         // Load client secrets.
@@ -58,12 +61,9 @@ public class GoogleFile {
     }
     
     public void write(String content) throws IOException, GeneralSecurityException{
-        String valueInputOption = "USER_ENTERED";
-        String insertDataOption = "OVERWRITE";
         LocalDateTime now = LocalDateTime.now();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         String formatDateTime = now.format(formatter);
-        Sheets sheetsService = createSheetsService();
         requestBody.setValues(Arrays.asList(Arrays.asList(formatDateTime,content)));
         
         Sheets.Spreadsheets.Values.Append request1 = sheetsService.spreadsheets().values().append(spreadsheetId, range, requestBody);
@@ -83,9 +83,7 @@ public class GoogleFile {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
         String formatDateTime = now.format(formatter);
         requestBody.setValues(Arrays.asList(Arrays.asList("time","content"),Arrays.asList(formatDateTime,"start!!!")));
-        Sheets sheetsService = createSheetsService();
-        String valueInputOption = "USER_ENTERED";
-        String insertDataOption = "OVERWRITE";
+        sheetsService = createSheetsService();
         Sheets.Spreadsheets.Values.Append request = sheetsService.spreadsheets().values().append(spreadsheetId, range, requestBody);
         request.setValueInputOption(valueInputOption);
         request.setInsertDataOption(insertDataOption);
