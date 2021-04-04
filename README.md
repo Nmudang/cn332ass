@@ -1,8 +1,8 @@
 # cn332ass
-### GoogleLogfileJavaVer 
+### GoogleLogfileJavaVer (complete)
 #### Detail : Create customer list to keep list of customer. When there is changed or when there is new customer. Save the change to log file. Also save change google sheet
-### ObserverPatternHW
+### ObserverPatternHW (complete)
 #### Datail : Use observer pattern to handle windows and shapes resizing
-### BubbleSort
+### BubbleSort (complete)
 #### Detail : 1.sort string
 ####          2.sort Class person
