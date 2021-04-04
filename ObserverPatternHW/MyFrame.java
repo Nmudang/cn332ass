@@ -23,6 +23,7 @@ public class MyFrame extends JFrame implements ActionListener{
             new CircleObserver(subject);
             new RectangleObserver(subject);
             new OvalObserver(subject);
+            subject.setResize(50, g);
             getContentPane().setLayout(null);
             JTextField input = new JTextField();
             input.setBounds(500, 50, 62, 20);
