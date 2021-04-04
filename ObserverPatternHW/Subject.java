@@ -1,3 +1,5 @@
+/* รายชื่อสมาชิกกลุ่ม 6110613079 ชุติกาญจน์ กุศลเอี่ยม
+             6110613301 กนกกร นามเปรมปรีดิ์ */
 import java.util.ArrayList;
 import java.util.List;
 import java.awt.*;
