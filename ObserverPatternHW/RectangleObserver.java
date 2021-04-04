@@ -9,8 +9,9 @@ public class RectangleObserver extends ShapeObserver{
         this.subject.attach(this);
     }
     public void update(int resize, Graphics g) {
+        double size = Math.sqrt(resize);
         g.setColor(Color.blue);
-        g.fillRect(50,250,resize*2,resize);
+        g.fillRect(50,250,(int)size*2,(int)size);
     }
 
 }
