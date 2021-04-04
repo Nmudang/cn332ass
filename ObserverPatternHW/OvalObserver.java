@@ -9,8 +9,9 @@ public class OvalObserver extends ShapeObserver{
         this.subject.attach(this);
     }
     public void update(int resize, Graphics g) {
+        double size = Math.sqrt(resize);
         g.setColor(Color.yellow);
-        g.fillOval(300,250,resize,resize*2);
+        g.fillOval(300,250,(int)size,(int)size*2);
     }
 
 }
