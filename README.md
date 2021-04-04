@@ -6,3 +6,6 @@
 ### BubbleSort (complete) (folder Templates)
 #### Detail : 1.sort string
 ####          2.sort Class person
+#### รายชื่อสมาชิกกลุ่ม
+##### 1.นางสาวชุติกาญจน์ กุศลเอี่ยม 6110613079
+##### 2.นางสาวกนกกร นามเปรมปรีดิ์ 6110613301
