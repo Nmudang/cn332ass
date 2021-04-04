@@ -25,24 +25,22 @@ public class MyFrame extends JFrame{
         b.setBounds(500,100,60,30);  
         b.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                    i++;
-                    input.setText(input.getText());
-                    size = Integer.valueOf(input.getText());
-                    if (i%2 == 0)
-                        setBounds(50,100, 800, 600);
-                    else
-                       setBounds(50,100, 801, 601); 
-                    
-                   
-            }
-        });
+                i++;
+                input.setText(input.getText());
+                size = Integer.valueOf(input.getText());
+                if (i%2 == 0)
+                    setBounds(50,100, 800, 600);
+                else
+                    setBounds(50,100, 801, 601); 
+                }
+            });
         getContentPane().add(input);
         getContentPane().add(b); 
         setLocationRelativeTo(null);
         setVisible(true);
-        
+                     
     }
-    
+                 
     public void paint(Graphics g){
         new SquareObserver(subject);
         new CircleObserver(subject);
@@ -50,8 +48,9 @@ public class MyFrame extends JFrame{
         new OvalObserver(subject);
         subject.setResize(size, g); //client can resize shapes by change first field
     }
-        
+                     
     public static void main(String[] args) {
         MyFrame frame = new MyFrame();
         }
     }
+             
