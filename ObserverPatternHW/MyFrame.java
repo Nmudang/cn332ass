@@ -20,9 +20,10 @@ public class MyFrame extends JFrame{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
         JTextField input = new JTextField();
-        input.setBounds(500, 50, 100, 50);
-        Button b = new Button("resize");  
-        b.setBounds(500,100,60,30);  
+        
+        input.setBounds(500, 50, 200, 50);
+        Button b = new Button("resize(The unit is pixel)");  
+        b.setBounds(500,100,200,30);  
         b.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 i++;
@@ -35,7 +36,8 @@ public class MyFrame extends JFrame{
                 }
             });
         getContentPane().add(input);
-        getContentPane().add(b); 
+       getContentPane().add(b); 
+        
         setLocationRelativeTo(null);
         setVisible(true);
                      
