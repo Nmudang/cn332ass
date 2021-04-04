@@ -7,6 +7,6 @@
 ### ObserverPatternHomework (complete) ( :file_folder: folder ObserverPatternHW)
 #### Datail : Use observer pattern to handle windows and shapes resizing
 ### BubbleSort (complete) ( :file_folder: folder Templates)
-#### Detail : 1.sort string
+#### Detail : 1.sort string :red_circle: :large_blue_diamond: :small_red_triangle:
 ####          2.sort Class person :scientist: :child: :scientist:
 
