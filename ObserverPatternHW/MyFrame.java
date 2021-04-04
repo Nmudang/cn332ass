@@ -6,10 +6,16 @@ import java.awt.event.ActionListener;
 import java.awt.*;
 import javax.swing.*;
 import java.awt.geom.*;
+import java.awt.Graphics;
 public class MyFrame extends JFrame{
     int size;
+    Subject subject;
+    private int i;
     public MyFrame() {
         super("resize many shapes");
+        subject = new Subject();
+        size = 100; 
+        i = 0;
         setBounds(50,100, 800, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -19,17 +25,25 @@ public class MyFrame extends JFrame{
         b.setBounds(500,100,60,30);  
         b.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                    input.setText("Pressed"+input.getText());
+                    i++;
+                    input.setText(input.getText());
                     size = Integer.valueOf(input.getText());
+                    if (i%2 == 0)
+                        setBounds(50,100, 800, 600);
+                    else
+                       setBounds(50,100, 801, 601); 
+                    
+                   
             }
         });
         getContentPane().add(input);
         getContentPane().add(b); 
         setLocationRelativeTo(null);
         setVisible(true);
+        
     }
-    public void paint(int size, Graphics g){
-        Subject subject = new Subject();
+    
+    public void paint(Graphics g){
         new SquareObserver(subject);
         new CircleObserver(subject);
         new RectangleObserver(subject);
